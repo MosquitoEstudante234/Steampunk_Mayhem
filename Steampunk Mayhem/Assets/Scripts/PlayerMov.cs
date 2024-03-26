@@ -6,30 +6,44 @@ using UnityEngine;
 public class PlayerMov : MonoBehaviour
 {
     public Animator animator;
-
+    public bool EstaDireita;
+    public bool EstaEsquerda;
 
     void Start()
     {
-        animator.SetBool("PuloDir", true);
+        animator.SetBool("PuloDir", false);
         animator.SetBool("PuloEsq", false);
     }
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+         if (EstaDireita)
+            {
+                animator.SetBool("PuloEsq", true);
+            }
+            if (EstaEsquerda)
+            {
+                animator.SetBool("PuloDir", true);
+            }
+        }
     }
     private void OnTriggerStay2D(Collider2D col)
     {
-        if (col.CompareTag("LeftWall") && Input.GetKeyDown(KeyCode.Space))
-        {
-            animator.SetBool("PuloEsq", true);
-        }
-        if (col.CompareTag("RightWall") && Input.GetKeyDown(KeyCode.Space))
-        {
-            animator.SetBool("PuloDir", true);
-        }
+            if (col.CompareTag("LeftWall"))
+            {
+                EstaEsquerda = true;
+                EstaDireita = false;
+            }
+            if (col.CompareTag("RightWall"))
+            {
+                EstaDireita = true;
+                EstaEsquerda = false;
+            }
        
+
     }
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerExit2D(Collider2D col)
     {
         if (col.CompareTag("LeftWall"))
         {
@@ -40,6 +54,7 @@ public class PlayerMov : MonoBehaviour
         {
             animator.SetBool("PuloEsq", false);
             animator.SetBool("PuloDir", false);
-        }
+        } 
     }
+   
 }
