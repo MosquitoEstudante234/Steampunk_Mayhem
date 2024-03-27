@@ -17,7 +17,7 @@ public class Score : MonoBehaviour
 
     private void Update()
     {
-        scoreTxt.text = score.ToString();
+        scoreTxt.text = "Score:"+ score.ToString();
 
     }
     private void OnTriggerEnter2D(Collider2D col)
