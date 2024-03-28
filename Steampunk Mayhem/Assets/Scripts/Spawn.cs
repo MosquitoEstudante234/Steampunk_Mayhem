@@ -10,7 +10,7 @@ public class Spawn : MonoBehaviour
     public float cooldown;
     void Start()
     {
-
+        cooldown = Random.Range(1, 5);
     }
 
     // Update is called once per frame
@@ -19,8 +19,9 @@ public class Spawn : MonoBehaviour
         timer += Time.deltaTime;
         if (timer > cooldown)
         {
-            FixedSpawn(2);
+            FixedSpawn(1);
             timer = 0;
+            cooldown = Random.Range(3, 15);
         }
     }
     void FixedSpawn(int enemyNumb)

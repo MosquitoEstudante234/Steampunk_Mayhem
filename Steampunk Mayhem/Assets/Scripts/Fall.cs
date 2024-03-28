@@ -10,7 +10,7 @@ public class Fall : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.down * velocidade * Time.deltaTime);
-        if (transform.position.y <= -10)
+        if (transform.position.y <= -20)
         {
             Destroy(gameObject);
 
