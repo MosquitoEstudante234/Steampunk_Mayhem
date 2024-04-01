@@ -16,7 +16,7 @@ public class PlayerMov : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Fire1"))
         {
          if (EstaDireita)
             {
