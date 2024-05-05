@@ -14,10 +14,9 @@ public class PlayerMov : MonoBehaviour
         animator.SetBool("PuloDir", false);
         animator.SetBool("PuloEsq", false);
     }
-    void Update()
+    public void U()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
+ 
          if (EstaDireita)
             {
                 animator.SetBool("PuloEsq", true);
@@ -26,7 +25,7 @@ public class PlayerMov : MonoBehaviour
             {
                 animator.SetBool("PuloDir", true);
             }
-        }
+        
     }
     private void OnTriggerStay2D(Collider2D col)
     {

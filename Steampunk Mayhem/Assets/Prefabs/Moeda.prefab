@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
+  SlowModeButtonButton: {fileID: 0}
 --- !u!95 &1458267179845899557
 Animator:
   serializedVersion: 5

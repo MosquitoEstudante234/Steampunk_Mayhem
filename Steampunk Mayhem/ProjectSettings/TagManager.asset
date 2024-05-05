@@ -8,6 +8,9 @@ TagManager:
   - RightWall
   - LeftWall
   - Enemy
+  - Shield
+  - Death]
+  - SlowModeButton
   layers:
   - Default
   - TransparentFX

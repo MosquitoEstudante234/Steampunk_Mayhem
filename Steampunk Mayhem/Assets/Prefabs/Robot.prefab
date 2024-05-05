@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4659337073310110773}
   - component: {fileID: 1741529096600429788}
   - component: {fileID: 725234450445366568}
+  - component: {fileID: -4571464443968479609}
   m_Layer: 0
   m_Name: Robot
   m_TagString: Enemy
@@ -146,3 +147,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &-4571464443968479609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8881190498077233169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70250e8bbfb59a941aad507a2c58a8c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

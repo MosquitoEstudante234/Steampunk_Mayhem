@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Death : MonoBehaviour
 {
-    
+
     public void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Enemy"))
+        if (col.CompareTag("Death]"))
         {
-            SceneManager.LoadScene("cena0");
+            SceneManager.LoadScene("cena1");
         }
     }
 }
