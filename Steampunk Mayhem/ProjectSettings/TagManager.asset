@@ -11,6 +11,7 @@ TagManager:
   - Shield
   - Death]
   - SlowModeButton
+  - GameOver
   layers:
   - Default
   - TransparentFX

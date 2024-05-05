@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class Meters : MonoBehaviour
 {
-    public float Meter;
+    public static float Meter;
     public Text meterTxt;
     void Start()
     {
-        
+        Meter = 0;
     }
 
     public void Update()

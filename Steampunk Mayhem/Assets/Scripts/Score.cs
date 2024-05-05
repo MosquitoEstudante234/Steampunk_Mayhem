@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     public Text scoreTxt;
-    public int score;
+    public static int score;
     private void Start()
     {
 
@@ -27,6 +27,7 @@ public class Score : MonoBehaviour
         {
             score = score + 500;
             Destroy(col.gameObject);
+            FindObjectOfType<AudioManager>().Play("Coin");
         }
     }
 
